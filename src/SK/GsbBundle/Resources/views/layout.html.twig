@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}GSB{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/SKGsb/css/style.css')}}"
+    </head>
+    
+    <body>
+       
+        {%block haut%}<div id="cadreduhaut"><{%endblock%}
+        {%block centre%}<div id="cadreducentre"><{%endblock%} 
+        {%block gauche%}<div id="cadredegauche"><{%endblock%}  
+        {%block bas%}<div id="cadredubas"><{%endblock%} 
+        
+    </body>
+</html>

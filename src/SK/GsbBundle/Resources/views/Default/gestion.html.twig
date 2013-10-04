@@ -1,0 +1,67 @@
+{% extends 'SKGsbBundle::Layout.html.twig' %}
+
+  
+{% block haut %}
+        <div id="cadreduhaut">
+       
+           <img src="{{ asset('bundles/SKGsb/images/logo.jpg') }}"alt="logo" width="105px" height="105px" align="left" /></left>
+        <h2>Laboratoire pharmaceutique G.S.B</h2>
+        </div>
+{%endblock%}
+
+{% block centre %}
+        <div id="cadreducentre">
+  La gestion informatique
+La DSI (Direction des Services Informatiques) est une entité importante de la structure Europe qui
+participe aux choix stratégiques.
+Pour Swiss-Bourdin, qui occupait le siège parisien avant la fusion, l'outil informatique et l'utilisation
+d'outils décisionnels pour améliorer la vision et la planification de l'activité ont toujours fait partie de la
+politique maison, en particulier pour ce qui concerne la partie recherche, production, communication et
+juridique.
+La partie commerciale a été le parent pauvre de cette informatisation, les visiteurs étant vus
+comme des acteurs distants autonomes. La DSI a convaincu l'entreprise que l'intégration des
+données fournies par cette partie aura un impact important sur l'ensemble de l'activité.
+        
+        </div>
+{%endblock%}
+        
+{% block gauche %}
+      <div class="menu_div"> 
+<ul>
+<li><a href="{{path('SKGsbBundle_accueil')}}">Accueil : </a></li>
+
+<li><a href="#">Présentation</a> 
+<ul class="sub-item1"> 
+<li><a href="{{path('SKGsbBundle_activite')}}">Activité :</a>
+    <li><a href="{{path('SKGsbBundle_entreprise')}}">L'entreprise :</a>
+</li>
+</ul> 
+</li> 
+
+<li><a href="#">SI</a> 
+<ul class="sub-item2"> 
+<li><a href="{{path('SKGsbBundle_organisation')}}">Description :</a></li>
+<li><a href="{{path('SKGsbBundle_gestion')}}">Gestion :</a></li>
+<li><a href="{{path('SKGsbBundle_equipement')}}">Equipement :</a></li>
+</ul>
+</li>
+
+<li><a href="#">Reseau</a>
+<ul class="sub-item3"> 
+<li><a href="{{path('SKGsbBundle_repartition')}}">Repartition :</a></li>
+<li><a href="{{path('SKGsbBundle_segmentation')}}">Segmentation :</a></li>
+</ul>
+</li>
+
+</ul>
+</div> 
+
+{%endblock%}
+
+        
+{% block bas %}
+        <div id="cadredubas">Copyright 2013/2014</div>
+{%endblock%}
+        
+
+        

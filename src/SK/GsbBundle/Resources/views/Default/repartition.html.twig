@@ -1,0 +1,84 @@
+{% extends 'SKGsbBundle::Layout.html.twig' %}
+
+  
+{% block haut %}
+        <div id="cadreduhaut">
+       
+           <img src="{{ asset('bundles/SKGsb/images/logo.jpg') }}"alt="logo" width="105px" height="105px" align="left" /></left>
+        <h2>Laboratoire pharmaceutique G.S.B</h2>
+        </div>
+{%endblock%}
+
+{% block centre %}
+        <div id="cadreducentre">
+   Répartition des services
+Chaque étage dispose d'une baie de
+brassage qui le relie par une fibre à la
+baie centrale de la salle serveurs.
+Toutes les salles de réunion sont
+équipées d'un point d'accès Wifi
+positionné par défaut dans le VLAN
+"Visiteurs" qui autorise uniquement un
+accès Internet.
+Les portables connectés en wifi à ce
+point d'accès reçoivent ainsi une
+adresse IP et n'ont, par conséquent
+accès qu'aux services DHCP et DNS.
+Le point d’accès peut être configuré à
+la demande pour être raccordé à un
+VLAN présent au niveau de l'étage.
+Chaque salle de réunion dispose d'un
+vidéoprojecteur, d'enceintes et d'un
+tableau numérique interactif.
+La salle "Démonstration" est destinée à
+l'accueil des organismes de santé
+(AFSSAPS notamment) et des
+partenaires scientifiques. Elle dispose
+de paillasses et d'équipements de
+laboratoire, en plus d'une salle de
+réunion.
+<br>
+        <center><img src="{{ asset('bundles/SKGsb/images/repartition.jpg') }}"alt="logo" width="" height=""  /></center>
+        </div>
+{%endblock%}
+        
+{% block gauche %}
+      <div class="menu_div"> 
+<ul>
+<li><a href="{{path('SKGsbBundle_accueil')}}">Accueil : </a></li>
+
+<li><a href="#">Présentation</a> 
+<ul class="sub-item1"> 
+<li><a href="{{path('SKGsbBundle_activite')}}">Activité :</a>
+    <li><a href="{{path('SKGsbBundle_entreprise')}}">L'entreprise :</a>
+</li>
+</ul> 
+</li> 
+
+<li><a href="#">SI</a> 
+<ul class="sub-item2"> 
+<li><a href="{{path('SKGsbBundle_organisation')}}">Description :</a></li>
+<li><a href="{{path('SKGsbBundle_gestion')}}">Gestion :</a></li>
+<li><a href="{{path('SKGsbBundle_equipement')}}">Equipement :</a></li>
+</ul>
+</li>
+
+<li><a href="#">Reseau</a>
+<ul class="sub-item3"> 
+<li><a href="{{path('SKGsbBundle_repartition')}}">Repartition :</a></li>
+<li><a href="{{path('SKGsbBundle_segmentation')}}">Segmentation :</a></li>
+</ul>
+</li>
+
+</ul>
+</div> 
+
+{%endblock%}
+
+        
+{% block bas %}
+        <div id="cadredubas">Copyright 2013/2014</div>
+{%endblock%}
+        
+
+        

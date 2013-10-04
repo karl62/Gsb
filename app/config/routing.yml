@@ -1,0 +1,8 @@
+sk_gsb:
+    resource: "@SKGsbBundle/Resources/config/routing.yml"
+    prefix:   /Gsb/
+
+sk_mon_premier:
+    resource: "@SKMonPremierBundle/Resources/config/routing.yml"
+    prefix:   /SK
+    

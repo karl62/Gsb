@@ -1,0 +1,69 @@
+{% extends 'SKGsbBundle::Layout.html.twig' %}
+
+  
+{% block haut %}
+        <div id="cadreduhaut">
+       
+           <img src="{{ asset('bundles/SKGsb/images/logo.jpg') }}"alt="logo" width="105px" height="105px" align="left" /></left>
+        <h2>Laboratoire pharmaceutique G.S.B</h2>
+        </div>
+{%endblock%}
+
+{% block centre %}
+        <div id="cadreducentre">
+ L'équipement
+L'informatique est fortement répandue sur le site. Chaque employé est équipé d'un poste fixe relié au
+système central. On dénombre ainsi plus de 350 équipements terminaux et un nombre de serveurs
+physiques conséquent (45 en 2012) sur lesquels tournent plus de 100 serveurs virtuels.
+On trouve aussi des stations de travail plus puissantes dans la partie labo-recherche, et une multitude
+d'ordinateurs portables (personnels de direction, service informatique, services commerciaux, etc).
+Les visiteurs médicaux reçoivent une indemnité bisannuelle pour s'équiper en informatique (politique
+Swiss-Bourdin) ou une dotation en équipement (politique Galaxy). Il n'y a pas à l'heure actuelle
+d'uniformisation des machines ni du mode de fonctionnement
+Chaque employé de l'entreprise a une adresse de messagerie de la forme nomUtilisateur@swissgalaxy.
+com. Les anciennes adresses de chaque laboratoire ont été définitivement fermées au 1er
+janvier 2011.
+        
+        </div>
+{%endblock%}
+        
+{% block gauche %}
+      <div class="menu_div"> 
+<ul>
+<li><a href="{{path('SKGsbBundle_accueil')}}">Accueil : </a></li>
+
+<li><a href="#">Présentation</a> 
+<ul class="sub-item1"> 
+<li><a href="{{path('SKGsbBundle_activite')}}">Activité :</a>
+    <li><a href="{{path('SKGsbBundle_entreprise')}}">L'entreprise :</a>
+</li>
+</ul> 
+</li> 
+
+<li><a href="#">SI</a> 
+<ul class="sub-item2"> 
+<li><a href="{{path('SKGsbBundle_organisation')}}">Description :</a></li>
+<li><a href="{{path('SKGsbBundle_gestion')}}">Gestion :</a></li>
+<li><a href="{{path('SKGsbBundle_equipement')}}">Equipement :</a></li>
+</ul>
+</li>
+
+<li><a href="#">Reseau</a>
+<ul class="sub-item3"> 
+<li><a href="{{path('SKGsbBundle_repartition')}}">Repartition :</a></li>
+<li><a href="{{path('SKGsbBundle_segmentation')}}">Segmentation :</a></li>
+</ul>
+</li>
+
+</ul>
+</div> 
+
+{%endblock%}
+
+        
+{% block bas %}
+        <div id="cadredubas">Copyright 2013/2014</div>
+{%endblock%}
+        
+
+        

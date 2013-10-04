@@ -1,0 +1,7 @@
+sk_mon_premier_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: SKMonPremierBundle:Default:index }
+
+SKMonPremierBundle_accueil:
+  pattern: /
+  defaults: {_controller: SKMonPremierBundle:Default:index }

@@ -1,0 +1,66 @@
+{% extends 'SKGsbBundle::Layout.html.twig' %}
+
+  
+{% block haut %}
+        <div id="cadreduhaut">
+       
+           <img src="{{ asset('bundles/SKGsb/images/logo.jpg') }}"alt="logo" width="105px" height="105px" align="left" /></left>
+        <h2>Laboratoire pharmaceutique G.S.B</h2>
+        </div>
+{%endblock%}
+
+{% block centre %}
+        <div id="cadreducentre">
+          <p> Une conséquence de cette fusion, est la recherche d'une optimisation de l’activité du groupe ainsi
+constitué en réalisant des économies d’échelle dans la production et la distribution des médicaments
+(en passant par une nécessaire restructuration et vague de licenciement), tout en prenant le meilleur
+des deux laboratoires sur les produits concurrents.
+L'entreprise compte 480 visiteurs médicaux en France métropolitaine (Corse comprise), et 60 dans les
+départements et territoires d'outre-mer. Les territoires sont répartis en 6 secteurs géographiques
+(Paris-Centre, Sud, Nord, Ouest, Est, DTOM Caraïbes-Amériques, DTOM Asie-Afrique).
+<img src="{{ asset('bundles/SKGsb/images/carte_1.jpg') }}"alt="logo" width="" height="" />
+.</p>
+        
+        </div>
+{%endblock%}
+        
+{% block gauche %}
+      <div class="menu_div"> 
+<ul>
+<li><a href="{{path('SKGsbBundle_accueil')}}">Accueil : </a></li>
+
+<li><a href="#">Présentation</a> 
+<ul class="sub-item1"> 
+<li><a href="{{path('SKGsbBundle_activite')}}">Activité :</a>
+    <li><a href="{{path('SKGsbBundle_entreprise')}}">L'entreprise :</a>
+</li>
+</ul> 
+</li> 
+
+<li><a href="#">SI</a> 
+<ul class="sub-item2"> 
+<li><a href="{{path('SKGsbBundle_organisation')}}">Description :</a></li>
+<li><a href="{{path('SKGsbBundle_gestion')}}">Gestion :</a></li>
+<li><a href="{{path('SKGsbBundle_equipement')}}">Equipement :</a></li>
+</ul>
+</li>
+
+<li><a href="#">Reseau</a>
+<ul class="sub-item3"> 
+<li><a href="{{path('SKGsbBundle_repartition')}}">Repartition :</a></li>
+<li><a href="{{path('SKGsbBundle_segmentation')}}">Segmentation :</a></li>
+</ul>
+</li>
+
+</ul>
+</div> 
+
+{%endblock%}
+
+        
+{% block bas %}
+        <div id="cadredubas">Copyright 2013/2014</div>
+{%endblock%}
+        
+
+        

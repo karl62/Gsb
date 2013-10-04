@@ -1,0 +1,70 @@
+{% extends 'SKGsbBundle::Layout.html.twig' %}
+
+  
+{% block haut %}
+        <div id="cadreduhaut">
+       
+           <img src="{{ asset('bundles/SKGsb/images/logo.jpg') }}"alt="logo" width="105px" height="105px" align="left" /></left>
+        <h2>Laboratoire pharmaceutique G.S.B</h2>
+        </div>
+{%endblock%}
+
+{% block centre %}
+        <div id="cadreducentre">
+          <p> La force commerciale d'un laboratoire pharmaceutique est assurée par un travail de conseil et
+d'information auprès des prescripteurs. Les visiteurs médicaux (ou délégués) démarchent les
+médecins, pharmaciens, infirmières et autres métiers de santé susceptibles de prescrire aux patients
+les produits du laboratoire.
+L'objectif d'une visite est d'actualiser et rafraîchir la connaissance des professionnels de santé sur les
+produits de l'entreprise. Les visiteurs ne font pas de vente, mais leurs interventions ont un impact
+certain sur la prescription de la pharmacopée du laboratoire.
+Pour donner une organisation commune aux délégués médicaux, l'entreprise a adopté l'organisation
+de la flotte de visiteurs existant chez Galaxy, selon un système hiérarchique par région et, à un niveau
+supérieur, par secteur géographique (Sud, Nord, Paris-Centre, Antilles-Guyane, etc).
+Il n'y a pas eu d'harmonisation de la relation entre les personnels de terrain (Visiteurs et Délégués
+régionaux) et les responsables de secteur. Les habitudes en cours avant la fusion ont été adaptées
+sans que soient données des directives au niveau local.
+.</p>
+        
+        </div>
+{%endblock%}
+        
+{% block gauche %}
+      <div class="menu_div"> 
+<ul>
+<li><a href="{{path('SKGsbBundle_accueil')}}">Accueil : </a></li>
+
+<li><a href="#">Présentation</a> 
+<ul class="sub-item1"> 
+<li><a href="{{path('SKGsbBundle_activite')}}">Activité :</a>
+    <li><a href="{{path('SKGsbBundle_entreprise')}}">L'entreprise :</a>
+</li>
+</ul> 
+</li> 
+
+<li><a href="#">SI</a> 
+<ul class="sub-item2"> 
+<li><a href="{{path('SKGsbBundle_organisation')}}">Description :</a></li>
+<li><a href="{{path('SKGsbBundle_gestion')}}">Gestion :</a></li>
+<li><a href="{{path('SKGsbBundle_equipement')}}">Equipement :</a></li>
+</ul>
+</li>
+
+<li><a href="#">Reseau</a>
+<ul class="sub-item3"> 
+<li><a href="{{path('SKGsbBundle_repartition')}}">Repartition :</a></li>
+<li><a href="{{path('SKGsbBundle_segmentation')}}">Segmentation :</a></li>
+</ul>
+</li>
+
+</ul>
+</div> 
+
+{%endblock%}
+        
+{% block bas %}
+        <div id="cadredubas">Copyright 2013/2014</div>
+{%endblock%}
+        
+
+        

@@ -1,0 +1,139 @@
+<?php
+
+/* SKGsbBundle:Default:index.html.twig */
+class __TwigTemplate_a9e4b3a9cf8242db14a4cc12df2f05ed extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = $this->env->loadTemplate("SKGsbBundle::Layout.html.twig");
+
+        $this->blocks = array(
+            'haut' => array($this, 'block_haut'),
+            'centre' => array($this, 'block_centre'),
+            'gauche' => array($this, 'block_gauche'),
+            'bas' => array($this, 'block_bas'),
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "SKGsbBundle::Layout.html.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 4
+    public function block_haut($context, array $blocks = array())
+    {
+        // line 5
+        echo "        <div id=\"cadreduhaut\">
+       
+           <img src=\"";
+        // line 7
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/SKGsb/images/logo.jpg"), "html", null, true);
+        echo "\"alt=\"logo\" width=\"105px\" height=\"105px\" align=\"left\" /></left>
+        <h2>Laboratoire pharmaceutique G.S.B</h2>
+        </div>
+";
+    }
+
+    // line 12
+    public function block_centre($context, array $blocks = array())
+    {
+        // line 13
+        echo "        <div id=\"cadreducentre\">
+<h2><center> Bienvenue sur le site G.S.B</center> </h2>
+        
+        </div>
+";
+    }
+
+    // line 19
+    public function block_gauche($context, array $blocks = array())
+    {
+        // line 20
+        echo "      <div class=\"menu_div\"> 
+<ul>
+<li><a href=\"";
+        // line 22
+        echo $this->env->getExtension('routing')->getPath("SKGsbBundle_accueil");
+        echo "\">Accueil : </a></li>
+
+<li><a href=\"#\">Présentation</a> 
+<ul class=\"sub-item1\"> 
+<li><a href=\"";
+        // line 26
+        echo $this->env->getExtension('routing')->getPath("SKGsbBundle_activite");
+        echo "\">Activité :</a>
+    <li><a href=\"";
+        // line 27
+        echo $this->env->getExtension('routing')->getPath("SKGsbBundle_entreprise");
+        echo "\">L'entreprise :</a>
+</li>
+</ul> 
+</li> 
+
+<li><a href=\"#\">SI</a> 
+<ul class=\"sub-item2\"> 
+<li><a href=\"";
+        // line 34
+        echo $this->env->getExtension('routing')->getPath("SKGsbBundle_organisation");
+        echo "\">Description :</a></li>
+<li><a href=\"";
+        // line 35
+        echo $this->env->getExtension('routing')->getPath("SKGsbBundle_gestion");
+        echo "\">Gestion :</a></li>
+<li><a href=\"";
+        // line 36
+        echo $this->env->getExtension('routing')->getPath("SKGsbBundle_equipement");
+        echo "\">Equipement :</a></li>
+</ul>
+</li>
+
+<li><a href=\"#\">Reseau</a>
+<ul class=\"sub-item3\"> 
+<li><a href=\"";
+        // line 42
+        echo $this->env->getExtension('routing')->getPath("SKGsbBundle_repartition");
+        echo "\">Repartition :</a></li>
+<li><a href=\"";
+        // line 43
+        echo $this->env->getExtension('routing')->getPath("SKGsbBundle_segmentation");
+        echo "\">Segmentation :</a></li>
+</ul>
+</li>
+
+</ul>
+</div> 
+
+";
+    }
+
+    // line 52
+    public function block_bas($context, array $blocks = array())
+    {
+        // line 53
+        echo "        <div id=\"cadredubas\">Copyright 2013/2014</div>
+";
+    }
+
+    public function getTemplateName()
+    {
+        return "SKGsbBundle:Default:index.html.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  121 => 53,  118 => 52,  106 => 43,  102 => 42,  93 => 36,  89 => 35,  85 => 34,  75 => 27,  71 => 26,  64 => 22,  60 => 20,  57 => 19,  49 => 13,  46 => 12,  38 => 7,  34 => 5,  31 => 4,);
+    }
+}

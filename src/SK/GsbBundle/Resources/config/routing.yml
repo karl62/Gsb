@@ -1,0 +1,50 @@
+sk_gsb_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: SKGsbBundle:Default:index }
+
+SKGsbBundle_accueil:
+  pattern: /
+  defaults: {_controller: SKGsbBundle:Default:index }
+  
+  
+SKGsbBundle_entreprise:
+  pattern: /entreprise
+  defaults: {_controller: SKGsbBundle:Default:entreprise }
+  
+SKGsbBundle_gestion:
+  pattern: /gestion
+  defaults: {_controller: SKGsbBundle:Default:gestion }
+SKGsbBundle_equipement:
+  pattern: /equipement
+  defaults: {_controller: SKGsbBundle:Default:equipement }
+SKGsbBundle_repartition:
+  pattern: /repartition
+  defaults: {_controller: SKGsbBundle:Default:repartition }
+SKGsbBundle_segmentation:
+  pattern: /segmentation
+  defaults: {_controller: SKGsbBundle:Default:segmentation }
+  
+SKGsbBundle_organisation:
+  pattern: /organisation
+  defaults: {_controller: SKGsbBundle:Default:organisation } 
+  
+  
+SKGsbBundle_activite:
+  pattern: /activite
+  defaults: {_controller: SKGsbBundle:Default:activite }
+  
+SKGsbBundle_visiteur:
+  pattern: /visiteur
+  defaults: {_controller: SKGsbBundle:Default:visiteur } 
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  

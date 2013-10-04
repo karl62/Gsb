@@ -1,0 +1,103 @@
+body
+{
+background-color:#C0C0C0;
+}
+#cadreduhaut {
+height:105px;
+background-color:#D8D8D8 ;
+color:black;
+border:1px solid #000000;
+text-align: center;
+}
+#cadreducentre {
+float:right;
+width:1200px;
+height:650px;
+background-color:#585858;
+border:1px solid #000000;
+}      
+#cadredegauche {
+} 
+#cadredubas {
+clear:both;
+height:30px;
+background-color:#D8D8D8 ;
+color:black;
+border:1px solid #000000;
+text-align: center;
+}
+
+/*######## ITEMS Principaux ############*/
+.menu_div ul {
+margin:0px;
+padding:0px;
+font-family:Arial, Helvetica, sans-serif;
+font-size:15px;
+color:#FFF;
+list-style:none;
+text-indent:15px;
+background:#333333;
+width:205px;
+position:absolute;
+}
+
+.menu_div ul li {
+background:#585858;
+line-height:40px;
+border-bottom:1px solid #000;
+height:40px;
+}
+
+.menu_div ul li:hover {
+background:#4D4D4D;
+}
+
+.menu_div ul li a {
+text-decoration:none;
+color:#FFF;
+display:block;
+}
+
+.menu_div ul li a:hover {
+background:#4D4D4D;
+}
+
+.menu_div ul li#active {
+background:#3ea5ea;
+}
+
+ul ul {
+display: none;
+} 
+
+li:hover ul.sub-item1 {
+display:block;
+left:200px;
+top:41px;
+position:absolute;
+width:200px;
+}
+
+li:hover ul.sub-item2 {
+display:block;
+left:200px;
+top:82px;
+position:absolute;
+}
+
+li:hover ul.sub-item3 {
+display:block;
+left:200px;
+top:123px;
+position:absolute;
+}
+
+
+ul.sub-item1 li:hover ul.sub-sub-item1 {
+display:block;
+left:200px;
+top:0px;
+position:absolute;
+width:200px;
+}
+  

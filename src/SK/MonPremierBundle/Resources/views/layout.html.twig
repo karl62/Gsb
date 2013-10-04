@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Bienvenue{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+        
+    </head>
+    <body>
+        
+        <link rel="stylesheet" href="{{ asset('bundles/SKMonPremier/css/style.css')}}"
+      type="text/css" media="all" />
+<img src="{{ asset('bundles/SKMonPremier/images/logo.gif') }}"alt="logo" width="" height="" />
+        
+{% block body %}
+{% endblock %}
+        {% block javascripts %}{% endblock %}
+
+    </body>
+</html>
